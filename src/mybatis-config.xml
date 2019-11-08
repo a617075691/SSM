@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>	
+	<!-- 指定日志工具 -->
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+		<setting  name="autoMappingBehavior" value="FULL"/>
+	</settings>
+	<typeAliases>
+		<!--<typeAlias alias="Easybuy_user" type="com.xkit.yx.entity.Easybuy_user"></typeAlias> -->
+		<package name="com.yx.ssm.entity"></package>
+	</typeAliases>
+
+	<!-- 指定mapper文件所在位置 -->
+	<mappers>
+		<package name="com.yx.ssm.DAO"/>
+	</mappers>
+</configuration>
